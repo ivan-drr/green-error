@@ -4,23 +4,30 @@
   width: 100vh;
 }
 
+#article {
+  margin-right: 0.1rem;
+  width: 100%;
+}
+
 @media (max-width: 765px) {
   .container {
     margin-left: 10% !important;
     width: 31rem;
   }
   #article {
-    width: 55% !important;
+    width: 64% !important;
     height: 15rem;
+    margin-left: 0.8rem;
   }
 }
-
+@media (max-width: 885px) {
+  #article {
+    width: 80%;
+  }
+}
 @media (max-width: 965px) {
   .container {
     margin-left: 20%;
-  }
-  #article {
-    width: 90%;
   }
 }
 @media (max-width: 1256px) {
