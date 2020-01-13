@@ -1,8 +1,9 @@
 import UIkit from "uikit"
 import Icons from "uikit/dist/js/uikit-icons"
 
-import "./src/styles/global.css"
-import "./node_modules/uikit/dist/css/uikit.min.css"
+require("./src/styles/global.css")
+require("./node_modules/uikit/dist/css/uikit.min.css")
+require("prismjs/themes/prism-tomorrow.css")
 
 UIkit.use(Icons)
 /**
