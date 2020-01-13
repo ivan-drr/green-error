@@ -133,7 +133,12 @@ const Header = ({ siteTitle }) => (
           <li>
             <Link
               to="/sources/"
-              style={{ textAlign: "center", marginTop: "2em" }}
+              style={{
+                textAlign: "center",
+                marginTop: "2em",
+                boxShadow: "none",
+                border: "none"
+              }}
             >
               <button className="uk-button uk-button-secondary">
                 <span uk-icon="code" /> Sources
