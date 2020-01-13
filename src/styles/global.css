@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(117, 117, 117);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+  text-shadow: none !important;
+}
