@@ -1,7 +1,7 @@
 import React from "react"
 
 const Article = ({ articleTitle, articleDesc, articleImage, articleDate }) => (
-  <div className="uk-card uk-card-default uk-width-1-2@m">
+  <div id="article" className="uk-card uk-card-default uk-width-1-2@m">
     <div className="uk-card-header">
       <div className="uk-grid-small uk-flex-middle" uk-grid="true">
         <div className="uk-width-auto">

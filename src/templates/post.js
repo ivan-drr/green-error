@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import "../styles/container.css"
+import "../styles/post.css"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -10,7 +11,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <div className="container uk-margin-small-top">
-      <div className="blog-post" style={{ width: "55em" }}>
+      <div id="blog-post" className="blog-post">
         <h1>{frontmatter.title}</h1>
         <em>{frontmatter.date}</em>
         <div

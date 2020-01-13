@@ -1,0 +1,19 @@
+#blog-post {
+  width: 100vh;
+}
+
+@media (max-width: 588px) {
+  #blog-post {
+    width: 38vh !important;
+  }
+}
+@media (max-width: 1024px) {
+  #blog-post {
+    width: 65vh;
+  }
+}
+@media (min-width: 765px, max-width: 1256) {
+  #blog-post {
+    width: 70vh;
+  }
+}
