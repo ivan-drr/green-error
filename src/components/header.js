@@ -5,6 +5,7 @@ import PropTypes from "prop-types"
 import Logo from "../components/logo"
 
 import "../styles/header.css"
+import "../styles/nav-button.css"
 
 const Header = ({ siteTitle }) => (
   <header>
@@ -14,28 +15,16 @@ const Header = ({ siteTitle }) => (
       type="button"
       uk-toggle="target: #offcanvas-nav"
       uk-icon="chevron-right"
-      style={{
-        width: "5em",
-        height: "5em",
-        marginLeft: "2em",
-        top: "40%",
-        position: "fixed",
-      }}
     />
 
     <div id="offcanvas-nav" uk-offcanvas="overlay: true">
       <div className="uk-offcanvas-bar">
         <ul className="uk-nav uk-nav-default" style={{ fontSize: "1.2em" }}>
-          <button
+          <button id="nav-button-exit"
             className="uk-position-right uk-animation-slide-top uk-icon-button"
             type="button"
             uk-toggle="target: #offcanvas-nav"
             uk-icon="chevron-left"
-            style={{
-              width: "3em",
-              height: "3em",
-              margin: "0.6em",
-            }}
           />
 
           <li className="uk-nav-header">

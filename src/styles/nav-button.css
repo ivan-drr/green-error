@@ -1,0 +1,22 @@
+#nav-button, #nav-button-exit {
+  color: white;
+  background-color: rgba(123, 58, 156, 0.7);
+}
+
+#nav-button:hover, #nav-button-exit:hover {
+  background-color: rgba(180, 103, 219, 0.6);
+}
+
+#nav-button {
+  width: 5em;
+  height: 5em;
+  margin-left: 2em;
+  top: 40%;
+  position: fixed;
+}
+
+#nav-button-exit {
+  width: 3em;
+  height: 3em;
+  margin: 0.6em;
+}
