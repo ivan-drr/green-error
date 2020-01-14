@@ -37,19 +37,11 @@ const Sidenav = ({ siteTitle }) => (
               to="/"
               className="sidenav-link uk-transition-scale-up uk-transition-opaque"
             >
-              {window.location.href.indexOf("/") > -1 ? (
-                <span
-                  uk-icon="chevron-right"
-                  className="uk-animation-slide-left"
-                />
-              ) : (
-                false
-              )}{" "}
               <span
                 className="uk-icon-button"
                 uk-icon="commenting"
                 style={{ marginLeft: "1em", marginRight: "0.6em" }}
-              />{" "}
+              />
               Blog
             </Link>
 
@@ -59,11 +51,6 @@ const Sidenav = ({ siteTitle }) => (
                   uk-toggle="target: #searchBar; animation: uk-animation-slide-left"
                   href="#project-search"
                 >
-                  {window.location.href.indexOf("/") > -1 ? (
-                    <span uk-icon="chevron-right" />
-                  ) : (
-                    false
-                  )}{" "}
                   Search project
                 </a>
                 <div id="searchBar" className="uk-inline">
@@ -89,19 +76,11 @@ const Sidenav = ({ siteTitle }) => (
               to="/about/"
               className="sidenav-link uk-transition-scale-up uk-transition-opaque"
             >
-              {window.location.href.indexOf("/about/") > -1 ? (
-                <span
-                  uk-icon="chevron-right"
-                  className="uk-animation-slide-left"
-                />
-              ) : (
-                false
-              )}{" "}
               <span
                 className="uk-icon-button"
                 uk-icon="quote-right"
                 style={{ marginLeft: "1em", marginRight: "0.6em" }}
-              />{" "}
+              />
               About
             </Link>
           </li>
@@ -111,19 +90,11 @@ const Sidenav = ({ siteTitle }) => (
               to="/contact/"
               className="sidenav-link uk-transition-scale-up uk-transition-opaque"
             >
-              {window.location.href.indexOf("/contact/") > -1 ? (
-                <span
-                  uk-icon="chevron-right"
-                  className="uk-animation-slide-left"
-                />
-              ) : (
-                false
-              )}{" "}
               <span
                 className="uk-icon-button"
                 uk-icon="mail"
                 style={{ marginLeft: "1em", marginRight: "0.6em" }}
-              />{" "}
+              />
               Contact
             </Link>
           </li>
