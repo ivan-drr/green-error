@@ -1,0 +1,33 @@
+.uk-card {
+  background-color: rgba(84, 33, 110, 0.7);
+  box-shadow: 0px 0px 2px 2px #525252;
+}
+
+.uk-card-header {
+  background-color: rgb(26, 25, 32);
+  border-bottom-color: #525252 !important;
+}
+.uk-card-body {
+  background-color: rgb(26, 25, 32);
+  color: rgb(217, 215, 224);
+}
+.uk-card-footer {
+  background-color: rgb(26, 25, 32);
+  border-top-color: #525252 !important;
+}
+
+h3 {
+  color: #ccc !important;
+}
+
+time {
+  color: rgb(170, 150, 26);
+}
+
+#read-more {
+  color: rgb(177, 122, 204) !important;
+}
+
+#read-more::before {
+  border-bottom-color: rgb(177, 122, 204) !important;
+}

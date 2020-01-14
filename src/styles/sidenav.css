@@ -1,3 +1,23 @@
+.uk-offcanvas-bar {
+  background-color: rgb(26, 25, 32);
+}
+
+#sourcesBtn {
+  background-color: rgb(93, 47, 118);
+  color: #ccc;
+}
+
+#sourcesBtn:hover {
+  background-color: rgba(94, 47, 119, 0.75);
+  color: #ccc;
+}
+
+.sidenav-link:hover {
+  text-decoration: none;
+  box-shadow: none;
+  border: none;
+}
+
 .sidenav {
   height: 100%;
   width: 100px;

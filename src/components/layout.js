@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Sidenav from "./sidenav"
 
 import "../styles/container.css"
 
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Sidenav siteTitle={data.site.siteMetadata.title} />
       <div className="container">
         <main style={{ marginTop: "3rem" }}>{children}</main>
         <footer>

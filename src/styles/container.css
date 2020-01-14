@@ -36,10 +36,8 @@
   }
 }
 
-
-
 h1, h2, h3 {
-  color: rgba(255, 255, 255, 0.85);
+  color: #ccc;
   font-weight: 700;
 }
 
@@ -62,11 +60,10 @@ hr {
 
 a:hover {
   text-decoration: none;
-  box-shadow: inset 0px 0px 40px 40px #4d3288;
-  border: 1px solid #835ed2;
-  color: rgb(184, 184, 184);
+  border-left: 1px solid rgb(104, 46, 133);
+  color: rgb(104, 46, 133);
 }
 
 p, ul, li {
-  color: rgb(217, 215, 224);
+  color: #ccc;
 }

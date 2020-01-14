@@ -4,10 +4,10 @@ import PropTypes from "prop-types"
 
 import Logo from "../components/logo"
 
-import "../styles/header.css"
+import "../styles/sidenav.css"
 import "../styles/nav-button.css"
 
-const Header = ({ siteTitle }) => (
+const Sidenav = ({ siteTitle }) => (
   <header>
     <button
       id="nav-button"
@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => (
             </div>
           </li>
           <li className="uk-transition-toggle uk-parent uk-active">
-            <Link
+            <Link class="sidenav-link"
               to="/"
               className="uk-transition-scale-up uk-transition-opaque"
             >
@@ -55,7 +55,7 @@ const Header = ({ siteTitle }) => (
 
             <ul className="uk-nav-sub">
               <li>
-                <a
+                <a class="sidenav-link"
                   uk-toggle="target: #searchBar; animation: uk-animation-slide-left"
                   href="#project-search"
                 >
@@ -85,7 +85,7 @@ const Header = ({ siteTitle }) => (
           </li>
 
           <li className="uk-transition-toggle">
-            <Link
+            <Link class="sidenav-link"
               to="/about/"
               className="uk-transition-scale-up uk-transition-opaque"
             >
@@ -107,7 +107,7 @@ const Header = ({ siteTitle }) => (
           </li>
 
           <li className="uk-transition-toggle">
-            <Link
+            <Link class="sidenav-link"
               to="/contact/"
               className="uk-transition-scale-up uk-transition-opaque"
             >
@@ -131,7 +131,7 @@ const Header = ({ siteTitle }) => (
           <hr className="uk-divider-icon" style={{ marginTop: "3em" }} />
 
           <li>
-            <Link
+            <Link class="sidenav-link"
               to="/sources/"
               style={{
                 textAlign: "center",
@@ -140,7 +140,7 @@ const Header = ({ siteTitle }) => (
                 border: "none"
               }}
             >
-              <button className="uk-button uk-button-secondary">
+              <button id="sourcesBtn" className="uk-button uk-button-secondary">
                 <span uk-icon="code" /> Sources
               </button>
             </Link>
@@ -151,12 +151,12 @@ const Header = ({ siteTitle }) => (
   </header>
 )
 
-Header.propTypes = {
+Sidenav.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+Sidenav.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Sidenav

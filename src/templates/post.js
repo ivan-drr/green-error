@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import "../styles/container.css"
 import "../styles/post.css"
 
-export default function Template({
+export default function PostTemplate({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
@@ -23,7 +23,7 @@ export default function Template({
   )
 }
 
-export const pageQuery = graphql`
+export const postQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
