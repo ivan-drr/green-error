@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Layout from "../components/layout"
 
 import "../styles/container.css"
 import "../styles/post.css"
@@ -10,7 +11,7 @@ export default function PostTemplate({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="container uk-margin-small-top">
+    <Layout>
       <div id="blog-post" className="blog-post">
         <h1>{frontmatter.title}</h1>
         <em>{frontmatter.date}</em>
@@ -19,7 +20,7 @@ export default function PostTemplate({
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-    </div>
+    </Layout>
   )
 }
 

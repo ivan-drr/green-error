@@ -19,7 +19,7 @@ const Sidenav = ({ siteTitle }) => (
 
     <div id="offcanvas-nav" uk-offcanvas="overlay: true">
       <div className="uk-offcanvas-bar">
-        <ul className="uk-nav uk-nav-default" style={{ fontSize: "1.2em" }}>
+        <ul className="uk-nav uk-nav-default" style={{ fontSize: "1em" }}>
           <button id="nav-button-exit"
             className="uk-position-right uk-animation-slide-top uk-icon-button"
             type="button"
@@ -27,15 +27,15 @@ const Sidenav = ({ siteTitle }) => (
             uk-icon="chevron-left"
           />
 
-          <li className="uk-nav-header">
+          <li className="uk-nav-header" style={{ marginTop: '0' }}>
             <div className="size-logo" style={{ maxWidth: `1200px` }}>
               <Logo />
             </div>
           </li>
           <li className="uk-transition-toggle uk-parent uk-active">
-            <Link class="sidenav-link"
+            <Link
               to="/"
-              className="uk-transition-scale-up uk-transition-opaque"
+              className="sidenav-link uk-transition-scale-up uk-transition-opaque"
             >
               {window.location.href.indexOf("/") > -1 ? (
                 <span
@@ -55,7 +55,7 @@ const Sidenav = ({ siteTitle }) => (
 
             <ul className="uk-nav-sub">
               <li>
-                <a class="sidenav-link"
+                <a className="sidenav-link"
                   uk-toggle="target: #searchBar; animation: uk-animation-slide-left"
                   href="#project-search"
                 >
@@ -85,9 +85,9 @@ const Sidenav = ({ siteTitle }) => (
           </li>
 
           <li className="uk-transition-toggle">
-            <Link class="sidenav-link"
+            <Link
               to="/about/"
-              className="uk-transition-scale-up uk-transition-opaque"
+              className="sidenav-link uk-transition-scale-up uk-transition-opaque"
             >
               {window.location.href.indexOf("/about/") > -1 ? (
                 <span
@@ -107,9 +107,9 @@ const Sidenav = ({ siteTitle }) => (
           </li>
 
           <li className="uk-transition-toggle">
-            <Link class="sidenav-link"
+            <Link
               to="/contact/"
-              className="uk-transition-scale-up uk-transition-opaque"
+              className="sidenav-link uk-transition-scale-up uk-transition-opaque"
             >
               {window.location.href.indexOf("/contact/") > -1 ? (
                 <span
@@ -128,14 +128,12 @@ const Sidenav = ({ siteTitle }) => (
             </Link>
           </li>
 
-          <hr className="uk-divider-icon" style={{ marginTop: "3em" }} />
-
           <li>
-            <Link class="sidenav-link"
+            <Link className="sidenav-link"
               to="/sources/"
               style={{
                 textAlign: "center",
-                marginTop: "2em",
+                marginTop: "1em",
                 boxShadow: "none",
                 border: "none"
               }}
