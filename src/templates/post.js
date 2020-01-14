@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 import "../styles/container.css"
 import "../styles/post.css"
@@ -12,6 +13,7 @@ export default function PostTemplate({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
+      <SEO title={frontmatter.title} />
       <div id="blog-post" className="blog-post">
         <h1>{frontmatter.title}</h1>
         <em>{frontmatter.date}</em>
