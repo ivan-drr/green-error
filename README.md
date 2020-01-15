@@ -1,4 +1,5 @@
-# ![Logo](src/images/dark-logo/logo_transparent.png =250x250) Green Error *(working on)*
+<img src="src/images/dark-logo/logo_transparent.png" width="256"> 
+# Green Error *(working on)*
 A personal blog built with Gatsbyjs and UIkit based on Markdown posts.
 
 ## Installation
