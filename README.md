@@ -1,4 +1,4 @@
-<div style="text-align:center"><img src="src/images/dark-logo/logo_transparent.png" width="256"></div>
+<p style="align:center"><img src="src/images/dark-logo/logo_transparent.png" width="256"></p>
 
 # Green Error *(working on)*
 A personal blog built with Gatsbyjs and UIkit based on Markdown posts.
