@@ -18,7 +18,7 @@ const IndexPage = ({
   return (
     <Layout>
       <SEO title="Blog" />
-      <div className="foo">
+      <div className="title">
         <span className="letter" data-letter="G">G</span>
         <span className="letter" data-letter="R">R</span>
         <span className="letter" data-letter="E">E</span>
@@ -45,7 +45,6 @@ const IndexPage = ({
 function animateTitle() {
   setTimeout(() => {
     const letters = Array.prototype.slice.call(document.getElementsByClassName('letter'));
-    console.log(letters);
 
     letters.forEach((letter, index) => {
       setTimeout(() => {
