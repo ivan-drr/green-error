@@ -1,7 +1,7 @@
 <img src="src/images/dark-logo/logo_transparent.png" width="256">
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7f269cd2-fc22-4602-8c2e-83170a5b073b/deploy-status)](https://app.netlify.com/sites/green-error/deploys)
-[![Actions Status](https://github.com/ivan-drr/green-error/workflows/nodejs/badge.svg)](https://github.com/ivan-drr/green-error/actions)
+[![Actions Status](https://github.com/ivan-drr/green-error/workflows/Node CI/badge.svg)](https://github.com/ivan-drr/green-error/actions)
 # Green Error *(working on)*
 A personal blog built with Gatsbyjs and UIkit based on Markdown posts.
 
