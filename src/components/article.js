@@ -4,7 +4,10 @@ import { Link } from "gatsby"
 import '../styles/article.css'
 
 const Article = ({ post }) => (
-  <div id="article" className="uk-card uk-card-default uk-width-1-2@m">
+  <div
+    id={post.frontmatter.title}
+    className="article uk-card uk-card-default uk-width-1-2@m uk-animation-slide-left-small"
+  >
     <div className="uk-card-header">
       <div className="uk-grid-small uk-flex-middle" uk-grid="true">
         <div className="uk-width-expand">

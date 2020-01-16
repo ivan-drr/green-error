@@ -4,7 +4,7 @@
   width: 100vh;
 }
 
-#article {
+.article {
   margin-right: 0.1rem;
   width: 100%;
 }
@@ -14,14 +14,14 @@
     margin-left: 10% !important;
     width: 31rem;
   }
-  #article {
+  .article {
     width: 64% !important;
     height: 15rem;
     margin-left: 0.8rem;
   }
 }
 @media (max-width: 885px) {
-  #article {
+  .article {
     width: 80%;
   }
 }

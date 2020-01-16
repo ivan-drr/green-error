@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
+import SearchBar from "./search-bar"
 import Logo from "../components/logo"
 
 import "../styles/sidenav.css"
@@ -47,32 +48,7 @@ const Sidenav = ({ siteTitle }) => (
 
             <ul className="uk-nav-sub">
               <li>
-                <a className="sidenav-link"
-                  onClick={() => {
-                    const inputStyle = document.getElementById('searchBar').style;
-                    inputStyle.display === 'block'
-                      ? inputStyle.display = 'none'
-                      : inputStyle.display = 'block'
-                  }}
-                  href="#project-search"
-                >
-                  Search project
-                </a>
-                <div id="searchBar" className="uk-inline" style={{ display: "none" }}>
-                  <input
-                    className="uk-input"
-                    style={{
-                      width: "10em",
-                      height: "1.4em",
-                      marginLeft: "1em"
-                    }}
-                  />
-                  <span
-                    className="uk-form-icon uk-form-icon-flip"
-                    uk-icon="icon: search"
-                    style={{ marginRight: "2.8em" }}
-                  />
-                </div>
+                <SearchBar/>
               </li>
             </ul>
           </li>
