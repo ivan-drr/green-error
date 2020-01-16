@@ -30,7 +30,7 @@ module.exports = {
         start_url: `/`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/dark-logo/logo_transparent.png`,
       },
     },
     {
