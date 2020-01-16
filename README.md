@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7f269cd2-fc22-4602-8c2e-83170a5b073b/deploy-status)](https://app.netlify.com/sites/green-error/deploys)
+
 <img src="src/images/dark-logo/logo_transparent.png" width="256">
 
 # Green Error *(working on)*
