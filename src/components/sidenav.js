@@ -15,8 +15,10 @@ const Sidenav = ({ siteTitle }) => (
       className="uk-position-left uk-animation-slide-left uk-icon-button"
       type="button"
       uk-toggle="target: #offcanvas-nav"
-      uk-icon="chevron-right"
-    />
+      style={{ borderColor: 'transparent' }}
+    >
+      <span style={{ fontSize: '2em', color: 'rgb(198, 198, 198)' }}>✣</span>
+    </button>
 
     <div id="offcanvas-nav" uk-offcanvas="overlay: true">
       <div className="uk-offcanvas-bar">
@@ -25,8 +27,10 @@ const Sidenav = ({ siteTitle }) => (
             className="uk-position-right uk-animation-slide-top uk-icon-button"
             type="button"
             uk-toggle="target: #offcanvas-nav"
-            uk-icon="chevron-left"
-          />
+            style={{ borderColor: 'transparent' }}
+          >
+            <span style={{ fontSize: '1.3em', color: 'rgb(198, 198, 198)' }}>✣</span>
+          </button>
 
           <li className="uk-nav-header" style={{ marginTop: '0' }}>
             <div className="size-logo" style={{ maxWidth: `1200px` }}>
@@ -40,9 +44,8 @@ const Sidenav = ({ siteTitle }) => (
             >
               <span
                 className="uk-icon-button"
-                uk-icon="commenting"
                 style={{ marginLeft: "1em", marginRight: "0.6em" }}
-              />
+              >☴</span>
               Blog
             </Link>
 
@@ -60,9 +63,8 @@ const Sidenav = ({ siteTitle }) => (
             >
               <span
                 className="uk-icon-button"
-                uk-icon="quote-right"
                 style={{ marginLeft: "1em", marginRight: "0.6em" }}
-              />
+              >✦</span>
               About
             </Link>
           </li>
@@ -74,9 +76,8 @@ const Sidenav = ({ siteTitle }) => (
             >
               <span
                 className="uk-icon-button"
-                uk-icon="mail"
                 style={{ marginLeft: "1em", marginRight: "0.6em" }}
-              />
+              >⌦</span>
               Contact
             </Link>
           </li>
@@ -92,7 +93,7 @@ const Sidenav = ({ siteTitle }) => (
               }}
             >
               <button id="sourcesBtn" className="uk-button uk-button-secondary">
-                <span uk-icon="code" /> Sources
+                <span style={{ fontSize: '1.3em', color: 'rgb(198, 198, 198)' }}>｛｝</span> Sources
               </button>
             </Link>
           </li>

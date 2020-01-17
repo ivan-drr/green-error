@@ -17,8 +17,7 @@ const SearchBar = () => (
       />
       <span
         className="uk-form-icon uk-form-icon-flip"
-        uk-icon="icon: search"
-      />
+      >⌨</span>
     </div>
   </div>
 )
