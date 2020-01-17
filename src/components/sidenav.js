@@ -10,30 +10,32 @@ import "../styles/nav-button.css"
 
 const Sidenav = ({ siteTitle }) => (
   <header>
-    <button
+    <a
       id="nav-button"
       className="uk-position-left uk-animation-slide-left uk-icon-button"
       type="button"
+      href="#nav-open"
       uk-toggle="target: #offcanvas-nav"
       style={{ borderColor: "transparent" }}
     >
       <span style={{ fontSize: "2em", color: "rgb(198, 198, 198)" }}>✣</span>
-    </button>
+    </a>
 
     <div id="offcanvas-nav" uk-offcanvas="overlay: true">
       <div className="uk-offcanvas-bar">
         <ul className="uk-nav uk-nav-default" style={{ fontSize: "1em" }}>
-          <button
+          <a
             id="nav-button-exit"
             className="uk-position-right uk-animation-slide-top uk-icon-button"
             type="button"
             uk-toggle="target: #offcanvas-nav"
+            href="#nav-close"
             style={{ borderColor: "transparent" }}
           >
             <span style={{ fontSize: "1.3em", color: "rgb(198, 198, 198)" }}>
               ✣
             </span>
-          </button>
+          </a>
 
           <li className="uk-nav-header" style={{ marginTop: "0" }}>
             <div className="size-logo" style={{ maxWidth: `1200px` }}>
