@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import '../styles/article.css'
+import "../styles/article.css"
 
 const Article = ({ post }) => (
   <div
@@ -24,11 +24,14 @@ const Article = ({ post }) => (
       <p>{post.frontmatter.description}</p>
     </div>
     <div className="uk-card-footer">
-      <Link id="read-more" to={post.frontmatter.path} className="uk-button uk-button-text"
+      <Link
+        id="read-more"
+        to={post.frontmatter.path}
+        className="uk-button uk-button-text"
         style={{
-          textDecoration: 'none',
-          boxShadow: 'none',
-          border: 'none',
+          textDecoration: "none",
+          boxShadow: "none",
+          border: "none",
         }}
       >
         Read more

@@ -1,5 +1,5 @@
 const path = require(`path`)
-const fs = require('fs');
+const fs = require("fs")
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
@@ -37,7 +37,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.frontmatter.path,
       component: blogPostTemplate,
-      context: {}
-    });
+      context: {},
+    })
   })
 }

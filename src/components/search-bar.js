@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
 const SearchBar = () => (
   <div id="searchBar">
@@ -12,23 +12,24 @@ const SearchBar = () => (
         style={{
           width: "10em",
           height: "1.4em",
-          marginLeft: "1em"
+          marginLeft: "1em",
         }}
       />
-      <span
-        className="uk-form-icon uk-form-icon-flip"
-      >⌨</span>
+      <span className="uk-form-icon uk-form-icon-flip">⌨</span>
     </div>
   </div>
 )
 
 const handleSearch = event => {
-  const value = event.target.value.toLowerCase();
-  const articles = Array.prototype.slice.call(document.getElementsByClassName('article'));
+  const value = event.target.value.toLowerCase()
+  const articles = Array.prototype.slice.call(
+    document.getElementsByClassName("article")
+  )
 
   articles.forEach(article => {
-    if (!article.id.toLowerCase().includes(value)) article.style.display = 'none';
-    else article.style.display = 'block';
+    if (!article.id.toLowerCase().includes(value))
+      article.style.display = "none"
+    else article.style.display = "block"
   })
 }
 
