@@ -4,10 +4,11 @@
 
 @media (max-width: 588px) {
   #blog-post {
-    width: 38vh !important;
+    width: 40vh;
+    margin-left: 5%;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 588px, max-width: 1024px) {
   #blog-post {
     width: 65vh;
   }

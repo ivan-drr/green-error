@@ -8,7 +8,6 @@ body{
 }
 div.title{
   width: 100%;
-  margin: 0 auto;
   text-align: center;
 }
 .letter{
@@ -67,4 +66,29 @@ div.title{
     rotateY(40deg)
     rotateZ(0deg)
     skew(0deg,22deg);
+}
+
+@media (max-width: 765px) {
+  div.title {
+    width: 70%;
+  }
+  .letter {
+    font-size: 1.9em;
+  }
+}
+@media (min-width: 765px, max-width: 885px) {
+  div.title {
+    width: 85%;
+  }
+  .letter {
+    font-size: 3em;
+  }
+}
+@media (min-width: 965px, max-width: 1256px) {
+  div.title {
+    width: 90%;
+  }
+  .letter {
+    font-size: 3.5em;
+  }
 }

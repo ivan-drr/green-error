@@ -17,9 +17,7 @@ const AnimatedTitle = () => (
     <span className="letter" data-letter="N">
       N
     </span>
-    <span className="letter" data-letter="-">
-      -
-    </span>
+    <span className="letter"></span>
     <span className="letter" data-letter="E">
       E
     </span>

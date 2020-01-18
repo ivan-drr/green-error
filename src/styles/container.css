@@ -11,26 +11,25 @@
 
 @media (max-width: 765px) {
   .container {
-    margin-left: 10% !important;
+    margin-left: 5%;
     width: 31rem;
   }
   .article {
-    width: 64% !important;
-    height: 15rem;
-    margin-left: 0.8rem;
+    margin-left: 1.8rem;
+    width: 64%;
   }
 }
-@media (max-width: 885px) {
+@media (min-width: 765px, max-width: 885px) {
   .article {
     width: 80%;
   }
 }
-@media (max-width: 965px) {
+@media (min-width: 885px, max-width: 965px) {
   .container {
     margin-left: 20%;
   }
 }
-@media (max-width: 1256px) {
+@media (min-width: 965px, max-width: 1256px) {
   .container {
     margin-left: 20%;
   }
@@ -49,8 +48,8 @@ em {
   color: rgb(170, 150, 26);
 }
 
-pre {
-  background-color: rgb(26, 25, 32) !important;
+pre, code {
+  background-color: rgb(33, 31, 40) !important;
   border-color: rgb(38, 36, 47);
 }
 
