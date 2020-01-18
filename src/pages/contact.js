@@ -6,9 +6,11 @@ import SEO from "../components/seo"
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
-    <h1>I'd love to talk! Email me at the address below</h1>
+    <h1>Contact me on:</h1>
     <p>
-      <a href="mailto:me@example.com">me@example.com</a>
+      Gmail: <a href="mailto:ivan.delrr@gmail.com">ivan.delrr@gmail.com</a> <br/>
+      Github: <a href="https://github.com/ivan-drr">ivan-drr</a> <br/>
+      Linkedin: <a href="https://www.linkedin.com/in/ivan-del-rio/">ivan-del-rio</a>
     </p>
   </Layout>
 )

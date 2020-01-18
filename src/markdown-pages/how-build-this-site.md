@@ -5,9 +5,9 @@ title: "How to build this site"
 description: "This site is build on Gatsbyjs framework, based on markdown pages for posts with Prismjs to style code fragments. Also I used UIkit for global styles just to give it a try. Anyways UIkit is used mostly for animations purpose, these cards and minors fits. The responsive part of the app is build on just css."
 ---
 
-# How to build this site
-First of all you need to install [Node.js](https://nodejs.org).
 ## Getting started
+First of all you need to install [Node.js](https://nodejs.org).
+
 Once done that type this in your project folder or at any other desired location:
 ```bash
 npm install -g gatsby-cli

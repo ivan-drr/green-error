@@ -1,8 +1,18 @@
 import React from "react"
 
-export default () => (
-  <div>
-    <h1>About me</h1>
-    <p>I’m good enough, I’m smart enough, and gosh darn it, people like me!</p>
-  </div>
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
+const AboutPage = () => (
+  <Layout>
+    <SEO title="About" />
+    <h1>About:</h1>
+    <p>
+      Gmail: <a href="mailto:ivan.delrr@gmail.com">ivan.delrr@gmail.com</a> <br/>
+      Github: <a href="https://github.com/ivan-drr">ivan-drr</a> <br/>
+      Linkedin: <a href="https://www.linkedin.com/in/ivan-del-rio/">ivan-del-rio</a>
+    </p>
+  </Layout>
 )
+
+export default AboutPage
