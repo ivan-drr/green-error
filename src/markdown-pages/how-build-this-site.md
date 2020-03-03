@@ -167,8 +167,130 @@ We deleted our favicon too, which was inside image folder. We need to unreferenc
         theme_color: `#663399`,
         display: `minimal-ui`,
         // icon: `src/images/gatsby-icon.png`
-      },
+}
 ```
+
+## Starting to build
+Now we have a clean installation for our markdown blog, let's jump to it.
+
+### `index.js`
+First thing to do is think how our index page should works. This page could be found on `src/pages/index.js`.
+
+We will use:
+```javascript
+import React from "react"
+import { graphql } from "gatsby"
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Article from "../components/article"
+import AnimatedTitle from "../components/animated-title"
+
+import "../styles/title.css"
+```
+So why **graphql**. As a blog we need to list each of our entries somehow, graphql will help us to inject each existent article(our component) inside of a grid. In other hand **SEO** component is just for commonly known as search engine optimization. Layout is our wrapper component and the other twos are just custom styles and effects.
+
+At this part we need to create our component, we initialize it as a functional constant this time. The only difference between a function declaration and a variable assignment to a function it's just declared functions are at the top of the scope, so this way to declare it is just a commonly method used on react framework to make sure that function will be declared correctly according to the **lifecycle**.
+
+We need to **feed IndexPage** with the following object to get all markdowns files on the custom directory of `src/markdown-pages`.
+**Frontmatter** is the way that gatsby takes relevant metadata of our markdown file, which we write manually(see table at the start of this file on github or raw).
+
+Then just add a return statement to render the content:
+```javascript
+const IndexPage = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
+  const Posts = edges
+    .filter(edge => !!edge.node.frontmatter.date)
+    .map(edge => <Article key={edge.node.id} post={edge.node} />)
+  return (
+    <Layout>
+      <SEO title="Blog" />
+      <AnimatedTitle />
+      <div
+        className="uk-grid-medium uk-child-width-expand@s uk-text-center"
+        uk-grid="true"
+      >
+        {Posts}
+      </div>
+    </Layout>
+  )
+}
+
+export default IndexPage
+```
+
+And finally here is the query of graphql to get all of that markdown files. Assert that frontmatter contains the fields you will use to filter and list them:
+```javascript
+export const listPosts = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            description
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+          }
+        }
+      }
+    }
+  }
+`
+```
+
+---
+
+### `layout.js`
+Once done that we need to define Layout, SEO and Article components. Let's start with Layout. You can find it on `src/components` folder and it should look like this:
+```javascript
+import React from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
+
+import Sidenav from "./sidenav"
+
+import "../styles/container.css"
+
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  return (
+    <>
+      <Sidenav siteTitle={data.site.siteMetadata.title} />
+      <div className="container">
+        <main style={{ marginTop: "3rem" }}>{children}</main>
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
+      </div>
+    </>
+  )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout
+```
+
+In this case we define a query inside of Layout to get the title site asynchronously, we will use this a lot. We also feed Layout with an object called children to manage where render the content inside this component.
 
 ## First Launch
 To develop our site we have two options now.
