@@ -5,6 +5,28 @@ title: "How to build this site"
 description: "This site is build on Gatsbyjs framework, based on markdown pages for posts with Prismjs to style code fragments. Also I used UIkit for global styles just to give it a try. Anyways UIkit is used mostly for animations purpose, these cards and minors fits. The responsive part of the app is build on just css."
 ---
 
+## Index
+- [Getting started](#getting-started)
+- [Structure](#structure)
+  * [Folders](#folders)
+  * [Files](#files)
+- [Setup](#setup)
+  * [`layout.js`](#-layoutjs-)
+  * [`logo.js`](#-logojs-)
+  * [`index.js`](#-indexjs-)
+  * [`gatsby-config.js`](#-gatsby-configjs-)
+- [First Launch](#first-launch)
+- [Starting to build](#starting-to-build)
+  * [`index.js`](#-indexjs--1)
+  * [`layout.js`](#-layoutjs--1)
+  * [`article.js`](#-articlejs-)
+  * [`seo.js`](#-seojs-)
+  * [`sidenav.js`](#-sidenavjs-)
+  * [`search-bar.js`](#-search-barjs-)
+  * [`logo.js`](#-logojs--1)
+- [Creating first entry](#creating-first-entry)
+
+
 ## Getting started
 First of all you need to install [Node.js](https://nodejs.org).
 
@@ -450,7 +472,7 @@ export default SEO
 
 ---
 
-### sidenav.js
+### `sidenav.js`
 This component will be with the user always around the app, it will help them to navigate.
 
 We'll use:
