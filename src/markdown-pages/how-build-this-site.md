@@ -5,7 +5,7 @@ title: "How to build this site"
 description: "This site is build on Gatsbyjs framework, based on markdown pages for posts with Prismjs to style code fragments. Also I used UIkit for global styles just to give it a try. Anyways UIkit is used mostly for animations purpose, these cards and minors fits. The responsive part of the app is build on just css."
 ---
 
-## Index
+## Table of contents
 - [Getting started](#getting-started)
 - [Structure](#structure)
   * [Folders](#folders)
