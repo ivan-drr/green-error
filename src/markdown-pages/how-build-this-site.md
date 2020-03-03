@@ -702,9 +702,9 @@ title: "How to build this site"
 description: "This site is build on Gatsbyjs framework, based on markdown pages for posts with Prismjs to style code fragments. Also I used UIkit for global styles just to give it a try. Anyways UIkit is used mostly for animations purpose, these cards and minors fits. The responsive part of the app is build on just css."
 ---
 ```
-Notice that description should be on one line with cause that quotes don't allow multiline content.Once done that just write your article on markdown and this app will serve it automatically.
+Notice that description should be on **one line** with cause that quotes don't allow multiline content.Once done that just write your article on markdown and this app will serve it automatically.
 
-To make possible recreate markdown code boxes we have prismjs added on `gatsby-browser.js`. On `gatsby-config.js` we have the dependencies properties where we tell to the plugin gatsby filesystem where to look markdowns:
+To make possible recreate markdown code boxes we have **prismjs** added on `gatsby-browser.js`. On `gatsby-config.js` we have the dependencies properties where we tell to the plugin gatsby filesystem where to look markdowns:
 ```javascript
 options: {
     name: `markdown-pages`,
@@ -712,4 +712,4 @@ options: {
 },
 ```
 
-Finally on `gatsby-node.js` we "fetch" all markdowns files with a static query.
+Finally on `gatsby-node.js` we "fetch" all markdowns files with a **static** query.
