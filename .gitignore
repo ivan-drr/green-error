@@ -72,5 +72,3 @@ yarn.lock
 # Prettier
 .prettierignore
 .pretierrc
-
-package-lock.json
