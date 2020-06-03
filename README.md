@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7f269cd2-fc22-4602-8c2e-83170a5b073b/deploy-status)](https://app.netlify.com/sites/green-error/deploys)
 
-# Green Error _(working on)_
+# Green Error
 
 A personal blog built with Gatsbyjs and UIkit based on Markdown posts.
 
