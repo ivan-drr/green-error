@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import featured_image from '../images/featured_image.jpg'
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -53,7 +54,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: "https://green-error.netlify.app/featured_image.jpg",
+          content: {featured_image},
         },
         {
           name: `twitter:creator`,
