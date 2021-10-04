@@ -53,7 +53,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: "https://green-error.netlify.app/featured_image.jpg",
         },
         {
           name: `twitter:creator`,
