@@ -32,7 +32,7 @@ Deploy your application with:
 ## Host
 
 You can found this application deployed on:
-[Green Error](https://green-error.netlify.com)
+[Green Error](https://green-error.netlify.app)
 
 ## License
 
